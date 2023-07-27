@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'alfs-test-web-app'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_98124F44F73C4ECC92E96E67FE4F27CC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E98CCDA4E98A4DE59591000F86904F60 }}
