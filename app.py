@@ -1,17 +1,11 @@
-from http.server import BaseHTTPRequestHandler, HTTPServer
+# app.py
+from flask import Flask
 
-class RequestHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        self.send_response(200)
-        self.send_header('Content-type', 'text/html')
-        self.end_headers()
-        self.wfile.write(b"Hello, world!")
+app = Flask(__name__)
 
-def run(server_class=HTTPServer, handler_class=RequestHandler):
-    server_address = ('', 8000)
-    httpd = server_class(server_address, handler_class)
-    httpd.serve_forever()
+@app.route('/')
+def home():
+    return "Hello, World!"
 
-if __name__ == "__main__":
-    run()
-
+if __name__ == '__main__':
+    app.run(debug=True)
