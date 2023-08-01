@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'alf-web-app'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9F53D7D0C49945C9BAA6E3739123F58E }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
